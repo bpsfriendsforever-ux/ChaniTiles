@@ -88,7 +88,7 @@ export default function Footer({ onScrollTo }: FooterProps) {
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 text-slate-400 shrink-0 mt-0.5" />
                 <span className="text-gray-300">
-                  <strong>Chani Vitrified Tiles Showroom</strong>, Bhopal, Madhya Pradesh, Pin Code: 462042, India.
+                  <strong>Chani Vitrified Tiles Showroom</strong>, 87, Raisen Rd, Sector C, Sonagiri, Bhopal, MP.
                 </span>
               </li>
               <li className="pt-2">
@@ -96,7 +96,7 @@ export default function Footer({ onScrollTo }: FooterProps) {
                 <div className="relative rounded-xl overflow-hidden border border-slate-800 bg-slate-950 h-32 w-full group">
                   <iframe
                     title="Chani Vitrified Tiles Location Map"
-                    src="https://maps.google.com/maps?q=Chani%20Vitrified%20tiles%20Bhopal&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    src="https://maps.google.com/maps?q=87,%20Raisen%20Rd,%20Sector%20C,%20Sonagiri,%20Bhopal,%20MP&t=&z=15&ie=UTF8&iwloc=&output=embed"
                     className="w-full h-full border-0 opacity-80 group-hover:opacity-100 transition-opacity"
                     allowFullScreen
                     loading="lazy"

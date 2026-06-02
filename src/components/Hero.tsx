@@ -157,7 +157,7 @@ export default function Hero({ onScrollToSection, onOpenInquiry }: HeroProps) {
                 <div className="bg-slate-950 p-5 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
                   <div className="text-left space-y-1 max-w-[240px]">
                     <span className="text-[10px] font-extrabold uppercase tracking-widest text-slate-400 font-mono block">LOCATE SHOWROOM</span>
-                    <span className="text-xs text-slate-300 font-bold font-sans block leading-snug">Opp Board Office, Bhopal Road, MP</span>
+                    <span className="text-xs text-slate-300 font-bold font-sans block leading-snug">87, Raisen Rd, Sector C, Sonagiri, Bhopal, MP</span>
                   </div>
                   <a
                     href="https://www.google.com/maps/search/?api=1&query=Chani+Vitrified+Tiles+Bhopal"
