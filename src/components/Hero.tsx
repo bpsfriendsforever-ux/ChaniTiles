@@ -129,14 +129,6 @@ export default function Hero({ onScrollToSection, onOpenInquiry }: HeroProps) {
                     referrerPolicy="no-referrer"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
-
-                  {/* Quality Badges */}
-                  <div className="absolute top-4 left-4 flex flex-col gap-2 z-10">
-                    <span className="inline-flex items-center gap-1.5 rounded-full bg-slate-900/95 backdrop-blur-md px-3 py-1.5 text-[10px] font-mono font-bold uppercase tracking-wider text-amber-400 shadow-md border border-slate-800">
-                      <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                      Live Storefront Photo
-                    </span>
-                  </div>
                 </div>
 
                 {/* Stock In Hand Info Panel */}
