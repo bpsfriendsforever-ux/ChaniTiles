@@ -103,7 +103,7 @@ export default function Footer({ onScrollTo }: FooterProps) {
                   />
                   {/* Subtle overlaid clickable anchor that lets the user open big map immediately */}
                   <a
-                    href="https://www.google.com/maps/place/Chani+Vitrified+tiles/@23.2532463,77.4649651,17z"
+                    href="https://www.google.com/maps/search/?api=1&query=Chani+Vitrified+Tiles+Bhopal"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="absolute inset-0 bg-transparent flex items-end p-2 cursor-pointer"
@@ -123,7 +123,7 @@ export default function Footer({ onScrollTo }: FooterProps) {
 
         {/* Lower Credits Frame */}
         <div className="mt-12 border-t border-slate-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-sans">
-          <p>© {currentYear} Chani Vitrified Tiles Corporation. All rights reserved.</p>
+          <p>© Chani Vitrified Tiles Corporation. All rights reserved.</p>
           <div className="flex gap-4">
             <a 
               href="https://www.indiamart.com/chanvi-tiles-bhopal/products-and-services.html" 
@@ -134,7 +134,7 @@ export default function Footer({ onScrollTo }: FooterProps) {
               IndiaMart Directory <ExternalLink className="h-3 w-3" />
             </a>
             <a 
-              href="https://www.google.com/maps/place/Chani+Vitrified+tiles/@23.2532463,77.4649651,17z" 
+              href="https://www.google.com/maps/search/?api=1&query=Chani+Vitrified+Tiles+Bhopal" 
               target="_blank" 
               rel="noreferrer"
               className="hover:text-white transition flex items-center gap-1"

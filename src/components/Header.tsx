@@ -31,10 +31,7 @@ export default function Header({ onScrollToSection, activeInquiryModal }: Header
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         
         {/* Brand Logo & Name */}
-        <div className="flex items-center gap-3 cursor-pointer" onClick={() => handleNavClick('home')}>
-          <div className="w-10 h-10 bg-white flex items-center justify-center rotate-45 shrink-0 shadow-lg transition-transform hover:rotate-90 duration-300">
-            <div className="w-4 h-4 border-2 border-slate-900 bg-slate-900"></div>
-          </div>
+        <div className="flex items-center cursor-pointer" onClick={() => handleNavClick('home')}>
           <div>
             <h1 className="text-lg font-bold tracking-tight text-white sm:text-xl uppercase">
               Chani <span className="text-slate-400 font-light">Vitrified Tiles</span>
@@ -61,7 +58,7 @@ export default function Header({ onScrollToSection, activeInquiryModal }: Header
         {/* Right side CTA / Contacts */}
         <div className="hidden items-center gap-x-4 lg:flex">
           <a
-            href="https://www.google.com/maps/place/Chani+Vitrified+tiles/@23.2532463,77.4649651,17z"
+            href="https://www.google.com/maps/search/?api=1&query=Chani+Vitrified+Tiles+Bhopal"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-xs text-slate-450 hover:text-white font-mono transition-colors"
@@ -124,7 +121,7 @@ export default function Header({ onScrollToSection, activeInquiryModal }: Header
                 <MapPin className="h-4 w-4 text-red-400" /> Bhopal, MP
               </span>
               <a
-                href="https://www.google.com/maps/place/Chani+Vitrified+tiles/@23.2532463,77.4649651,17z"
+                href="https://www.google.com/maps/search/?api=1&query=Chani+Vitrified+Tiles+Bhopal"
                 target="_blank"
                 rel="noreferrer"
                 className="text-xs text-white flex items-center gap-1 hover:underline"

@@ -17,8 +17,8 @@ export default function InquiryForm({ selectedPreloadProduct, onClose }: Inquiry
     name: '',
     phone: '',
     email: '',
-    productCategory: 'Vitrified Tiles (Double Charge / PGVT)',
-    quantity: '500',
+    productCategory: '',
+    quantity: '',
     message: ''
   });
 
@@ -29,7 +29,7 @@ export default function InquiryForm({ selectedPreloadProduct, onClose }: Inquiry
     if (selectedPreloadProduct) {
       setFormData((prev) => ({
         ...prev,
-        message: `Inquiry regarding: ${selectedPreloadProduct}. Please provide wholesale price options and shipment time to Bhopal.`
+        message: prev.message || `Inquiry regarding: ${selectedPreloadProduct}. Please provide wholesale price options and shipment time to Bhopal.`
       }));
     }
   }, [selectedPreloadProduct]);
@@ -46,8 +46,8 @@ export default function InquiryForm({ selectedPreloadProduct, onClose }: Inquiry
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.name || !formData.phone) {
-      alert('Please fill out your Name and Mobile Number to generate the quotation request.');
+    if (!formData.name || !formData.phone || !formData.productCategory) {
+      alert('Please fill out your Name, Mobile Number, and select a Category of Interest.');
       return;
     }
     setIsSubmitted(true);
@@ -62,7 +62,7 @@ export default function InquiryForm({ selectedPreloadProduct, onClose }: Inquiry
 *Mobile:* ${formData.phone}
 *Email:* ${formData.email || 'N/A'}
 *Interest Category:* ${formData.productCategory}
-*Approx Quantity (SqFt):* ${formData.quantity} Sq. Ft.
+*Approx Quantity (SqFt):* ${formData.quantity ? formData.quantity + ' Sq. Ft.' : 'Not specified'}
 *Message Details:* ${formData.message || 'Please send custom catalog and pricing sheets.'}
 ----------------------------------
 _Submitted via Chani Tiles Interactive Portal_`;
@@ -152,10 +152,12 @@ _Submitted via Chani Tiles Interactive Portal_`;
             <div className="space-y-1">
               <label className="text-xs font-bold uppercase tracking-wider text-slate-500 font-mono">Main Category of Interest</label>
               <select
+                required
                 value={formData.productCategory}
                 onChange={(e) => setFormData({ ...formData, productCategory: e.target.value })}
-                className="block w-full rounded-lg border border-slate-305 bg-white py-2 px-3 text-sm text-slate-700 focus:border-slate-900 focus:outline-none focus:ring-1 focus:ring-slate-900"
+                className="block w-full rounded-lg border border-slate-350 bg-white py-2 px-3 text-sm text-slate-700 focus:border-slate-900 focus:outline-none focus:ring-1 focus:ring-slate-900"
               >
+                <option value="" disabled>e.g. Select Category...</option>
                 {tileCategories.map((cat) => (
                   <option key={cat} value={cat}>
                     {cat}
@@ -202,7 +204,7 @@ _Submitted via Chani Tiles Interactive Portal_`;
             type="submit"
             className="w-full rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-3 px-4 shadow-md transition-all active:scale-[0.98] flex items-center justify-center gap-2 cursor-pointer"
           >
-            <Send className="h-4 w-4" /> Assemble Quotation Form
+            <Send className="h-4 w-4" /> Send Enquiry
           </button>
 
         </form>
@@ -213,19 +215,19 @@ _Submitted via Chani Tiles Interactive Portal_`;
           </div>
 
           <div className="space-y-2">
-            <h4 className="text-xl font-bold text-slate-900">Quotation Form Assembled!</h4>
+            <h4 className="text-xl font-bold text-slate-900">Enquiry Form Sent!</h4>
             <p className="text-xs text-slate-500 max-w-sm mx-auto leading-normal">
-              Your parameters have been logged. To complete instant catalog dispatching, click the button below to text the assembled file automatically to our Bhopal sales coordinator on WhatsApp!
+              Your parameters have been logged. To complete instant catalog dispatching, click the button below to text your enquiry automatically to our Bhopal sales coordinator on WhatsApp!
             </p>
           </div>
 
           <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 text-left space-y-2.5 max-w-sm mx-auto">
-            <p className="text-[10px] text-slate-400 font-mono uppercase tracking-wider font-bold">Inquiry Summary Prepared:</p>
+            <p className="text-[10px] text-slate-400 font-mono uppercase tracking-wider font-bold">Enquiry Summary Prepared:</p>
             <div className="text-xs text-slate-700 space-y-1 font-sans">
               <p><strong>Name:</strong> {formData.name}</p>
               <p><strong>Mobile:</strong> {formData.phone}</p>
               <p><strong>Specs Of Interest:</strong> {formData.productCategory}</p>
-              <p><strong>Approx Area:</strong> {formData.quantity} Sq. Ft.</p>
+              <p><strong>Approx Area:</strong> {formData.quantity ? `${formData.quantity} Sq. Ft.` : 'Not specified'}</p>
             </div>
           </div>
 

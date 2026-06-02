@@ -81,7 +81,7 @@ export default function Reviews() {
             </div>
           </div>
           <a
-            href="https://www.google.com/maps/place/Chani+Vitrified+tiles/@23.2532463,77.4649651,17z"
+            href="https://www.google.com/maps/search/?api=1&query=Chani+Vitrified+Tiles+Bhopal"
             target="_blank"
             rel="noreferrer"
             className="rounded-lg bg-emerald-600 text-white font-bold text-xs px-4 py-2 hover:bg-emerald-700 shadow"
