@@ -9,7 +9,7 @@ import { Star, MessageSquare, Quote, Eye } from 'lucide-react';
 
 export default function Reviews() {
   return (
-    <section className="bg-gray-50 py-8 lg:py-12 border-t border-gray-100" id="reviews">
+    <section className="bg-gray-50 py-8 lg:py-12 border-t border-gray-100 scroll-mt-20" id="reviews">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Header Title */}

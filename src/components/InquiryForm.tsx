@@ -23,6 +23,7 @@ export default function InquiryForm({ selectedPreloadProduct, onClose }: Inquiry
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string>('');
 
   // Synchronize incoming pre-selected product
   useEffect(() => {
@@ -47,15 +48,16 @@ export default function InquiryForm({ selectedPreloadProduct, onClose }: Inquiry
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.phone || !formData.productCategory) {
-      alert('Please fill out your Name, Mobile Number, and select a Category of Interest.');
+      setErrorMessage('Please fill out your Name, Mobile Number, and select a Category of Interest.');
       return;
     }
+    setErrorMessage('');
     setIsSubmitted(true);
   };
 
   // Precomposing click to redirect to dealer WhatsApp (representing the official WhatsApp contact)
   const handleWhatsAppRedirect = () => {
-    const dealerPhone = '919425010203'; // Placeholder representing Chani Tiles official mobile contact line
+    const dealerPhone = '919109039102'; // Chani Tiles official mobile contact line
     const textMessage = `Hello *Chani Vitrified Tiles Corporation*, I would like to request a wholesale price quotation.
 ----------------------------------
 *Name:* ${formData.name}
@@ -75,7 +77,7 @@ _Submitted via Chani Tiles Interactive Portal_`;
   };
 
   return (
-    <div className="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm text-left" id="contact">
+    <div className="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm text-left" id="inquiry-form-card">
       
       {!isSubmitted ? (
         <form onSubmit={handleSubmit} className="space-y-5">
@@ -200,6 +202,11 @@ _Submitted via Chani Tiles Interactive Portal_`;
           </div>
 
           {/* submit */}
+          {errorMessage && (
+            <div className="rounded-lg bg-rose-50 border border-rose-200 p-3 text-xs text-rose-800 font-medium">
+              {errorMessage}
+            </div>
+          )}
           <button
             type="submit"
             className="w-full rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-3 px-4 shadow-md transition-all active:scale-[0.98] flex items-center justify-center gap-2 cursor-pointer"

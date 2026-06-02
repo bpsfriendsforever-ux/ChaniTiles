@@ -73,7 +73,7 @@ export default function App() {
       />
 
       {/* 3. Partner Value Propositon / Wholesale Highlights Grid */}
-      <section className="bg-gray-50 py-8 lg:py-12 border-y border-gray-100" id="values-section">
+      <section className="bg-gray-50 py-8 lg:py-12 border-y border-gray-100 scroll-mt-20" id="values-section">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -103,7 +103,7 @@ export default function App() {
       <Reviews />
 
       {/* 8. Conversion Capture inquiry segment */}
-      <section className="bg-white py-8 lg:py-12 border-t border-gray-100">
+      <section className="bg-white py-8 lg:py-12 border-t border-gray-100 scroll-mt-20" id="contact">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
@@ -148,7 +148,7 @@ export default function App() {
                 <div className="bg-gray-50 p-4 border border-gray-100 rounded-xl space-y-1 text-left flex flex-col justify-between">
                   <div>
                     <span className="text-[9px] uppercase tracking-wider font-mono text-slate-500 block font-bold">Wholesaler Hotline Call</span>
-                    <p className="text-sm font-bold text-gray-900 mt-1">Immediate Support: +91 94250 10203</p>
+                    <p className="text-sm font-bold text-gray-900 mt-1">Immediate Support: <a href="tel:+919109039102" className="hover:underline text-slate-800 font-bold">+91 91090 39102</a></p>
                   </div>
                   <p className="text-[10px] text-gray-500 mt-2">Speak directly to check transport rates to Indore, Jabalpur, Sagar, or Indore bypass.</p>
                 </div>

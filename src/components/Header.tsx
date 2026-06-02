@@ -67,7 +67,7 @@ export default function Header({ onScrollToSection, activeInquiryModal }: Header
             <span>Bhopal, MP</span>
           </a>
           <a
-            href="tel:+919425010203"
+            href="tel:+919109039102"
             className="hidden xl:flex items-center gap-1.5 rounded-full bg-slate-800 px-3.5 py-1.5 text-xs font-semibold text-slate-200 transition-colors hover:bg-slate-700 hover:text-white"
           >
             <Phone className="h-3.5 w-3.5" />

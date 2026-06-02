@@ -53,14 +53,14 @@ export default function Footer({ onScrollTo }: FooterProps) {
                 <Clock className="h-4 w-4 text-slate-400 shrink-0" />
                 <div>
                   <p className="font-semibold text-gray-300">Monday - Saturday</p>
-                  <p className="text-[10px] text-gray-500">10:00 AM - 08:30 PM (IST)</p>
+                  <p className="text-[10px] text-gray-400">09:00 AM - 08:30 PM (IST)</p>
                 </div>
               </li>
               <li className="flex items-center gap-2">
-                <Clock className="h-4 w-4 text-slate-650 shrink-0" />
+                <Clock className="h-4 w-4 text-slate-400 shrink-0" />
                 <div>
-                  <p className="font-medium text-gray-500">Sunday</p>
-                  <p className="text-[10px] text-gray-650">Closed (Available on Appointment)</p>
+                  <p className="font-semibold text-gray-300">Sunday</p>
+                  <p className="text-[10px] text-gray-400">09:00 AM - 08:30 PM (Open All Days)</p>
                 </div>
               </li>
             </ul>

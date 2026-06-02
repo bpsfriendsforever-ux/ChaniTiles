@@ -424,7 +424,7 @@ export default function Gallery({ onInquireItem }: GalleryProps) {
   };
 
   return (
-    <section className="bg-slate-50 py-10 lg:py-14 border-y border-slate-200 animate-fade-in" id="gallery-section">
+    <section className="bg-slate-50 py-10 lg:py-14 border-y border-slate-200 animate-fade-in scroll-mt-20" id="gallery-section">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -481,7 +481,7 @@ export default function Gallery({ onInquireItem }: GalleryProps) {
 
                 {/* Overlaid quick enlarger option */}
                 <div className="absolute inset-0 bg-slate-950/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center">
-                  <div className="h-12 w-12 rounded-full bg-white/95 backdrop-blur-xs text-slate-900 flex items-center justify-center shadow-lg transform scale-90 group-hover:scale-100 transition-all duration-300">
+                  <div className="h-12 w-12 rounded-full bg-white/95 backdrop-blur-sm text-slate-900 flex items-center justify-center shadow-lg transform scale-90 group-hover:scale-100 transition-all duration-300">
                     <Maximize2 className="h-5.5 w-5.5 text-slate-900" />
                   </div>
                 </div>
@@ -489,7 +489,7 @@ export default function Gallery({ onInquireItem }: GalleryProps) {
 
               {/* Text metadata - Heading only */}
               <div className="py-2.5 px-2 text-center flex-grow flex items-center justify-center">
-                <h4 className="text-xs sm:text-xs.5 md:text-xs.5 lg:text-[13px] font-extrabold text-slate-900 group-hover:text-slate-700 transition-colors uppercase tracking-wide line-clamp-2 leading-relaxed">
+                <h4 className="text-xs lg:text-[13px] font-extrabold text-slate-900 group-hover:text-slate-700 transition-colors uppercase tracking-wide line-clamp-2 leading-relaxed">
                   {image.title}
                 </h4>
               </div>
