@@ -111,17 +111,17 @@ export default function Hero({ onScrollToSection, onOpenInquiry }: HeroProps) {
           </div>
 
           {/* Graphic Side - Right 5 columns */}
-          <div className="lg:col-span-5 relative mt-6 lg:mt-0">
-            <div className="relative mx-auto max-w-[480px] lg:max-w-none">
+          <div className="lg:col-span-5 relative mt-6 lg:mt-0 flex flex-col">
+            <div className="relative mx-auto max-w-[480px] lg:max-w-none lg:h-full lg:w-full flex flex-col">
               
               {/* Outer Decorative Gradient Glow */}
               <div className="absolute -inset-2 rounded-3xl bg-gradient-to-tr from-slate-300/10 via-slate-100/30 to-slate-400/20 blur-xl -z-10" />
 
               {/* Main Storefront Frame */}
-              <div className="overflow-hidden rounded-3xl bg-white border border-slate-200 shadow-2xl flex flex-col transition-all hover:scale-[1.01] duration-300">
+              <div className="overflow-hidden rounded-3xl bg-white border border-slate-200 shadow-2xl flex flex-col transition-all hover:scale-[1.01] duration-300 lg:h-full lg:w-full">
                 
                 {/* Real Storefront Image */}
-                <div className="relative overflow-hidden bg-slate-950 h-72 sm:h-[380px]">
+                <div className="relative overflow-hidden bg-slate-950 flex-1 min-h-[220px] sm:min-h-[280px] lg:h-0">
                   <img
                     src={storefrontImg}
                     alt="Chani Tiles & Sanitaryware Storefront, Bhopal"
