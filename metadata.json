@@ -1,0 +1,6 @@
+{
+  "name": "Chani Vitrified Tiles",
+  "description": "Premium landing page for Chani Vitrified Tiles, the leading wholesaler and distributor of luxury floor, wall, and designer tiles in Bhopal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
