@@ -14,7 +14,7 @@ interface HeroProps {
 
 export default function Hero({ onScrollToSection, onOpenInquiry }: HeroProps) {
   return (
-    <section className="relative overflow-hidden bg-slate-50/80 py-12 lg:py-20" id="home">
+    <section className="relative overflow-hidden bg-slate-50/80 py-8 lg:py-12" id="home">
       
       {/* Background radial highlight */}
       <div className="absolute top-0 right-0 -z-10 h-96 w-96 rounded-full bg-slate-200/50 blur-3xl" />

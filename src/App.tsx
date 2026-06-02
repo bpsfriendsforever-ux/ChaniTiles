@@ -73,10 +73,10 @@ export default function App() {
       />
 
       {/* 3. Partner Value Propositon / Wholesale Highlights Grid */}
-      <section className="bg-gray-50 py-12 lg:py-16 border-y border-gray-100" id="values-section">
+      <section className="bg-gray-50 py-8 lg:py-12 border-y border-gray-100" id="values-section">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {partnershipValueHighlights.map((val, idx) => (
               <div 
                 key={idx} 
@@ -103,9 +103,9 @@ export default function App() {
       <Reviews />
 
       {/* 8. Conversion Capture inquiry segment */}
-      <section className="bg-white py-12 lg:py-20 border-t border-gray-100">
+      <section className="bg-white py-8 lg:py-12 border-t border-gray-100">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
             {/* Informational Text Column - 5 columns */}
             <div className="lg:col-span-5 space-y-6 text-left">

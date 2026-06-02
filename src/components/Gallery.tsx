@@ -424,11 +424,11 @@ export default function Gallery({ onInquireItem }: GalleryProps) {
   };
 
   return (
-    <section className="bg-slate-50 py-16 lg:py-24 border-y border-slate-200 animate-fade-in" id="gallery-section">
+    <section className="bg-slate-50 py-10 lg:py-14 border-y border-slate-200 animate-fade-in" id="gallery-section">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-4 mb-12">
+        <div className="text-center max-w-3xl mx-auto space-y-2 mb-8">
           <p className="text-slate-500 font-semibold tracking-[0.35em] uppercase text-xs">Verified Stock & Showroom Proof</p>
           <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
             Real Photo <span className="text-slate-400 font-light">Gallery</span>

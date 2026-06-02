@@ -9,11 +9,11 @@ import { Star, MessageSquare, Quote, Eye } from 'lucide-react';
 
 export default function Reviews() {
   return (
-    <section className="bg-gray-50 py-12 lg:py-20 border-t border-gray-100" id="reviews">
+    <section className="bg-gray-50 py-8 lg:py-12 border-t border-gray-100" id="reviews">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Header Title */}
-        <div className="text-center max-w-3xl mx-auto space-y-4 mb-12 sm:mb-16">
+        <div className="text-center max-w-3xl mx-auto space-y-2 mb-8">
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             Showroom Reviews & <span className="text-emerald-600">Client Stories</span>
           </h2>

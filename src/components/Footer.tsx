@@ -17,7 +17,7 @@ export default function Footer({ onScrollTo }: FooterProps) {
     <footer className="bg-gray-900 text-gray-400 border-t border-gray-800" id="contact-info">
       
       {/* Outer Grid Panel */}
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-10">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 items-start text-left">
           
           {/* Column 1: Core Brand Info */}
